@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <style>
+        /* Reset e estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        /* Navegação */
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Seções principais */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            font-size: 1.8rem;
+        }
+        
+        /* Estilos para artigos */
+        article {
+            padding: 20px;
+        }
+        
+        article h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        article p {
+            margin-bottom: 15px;
+        }
+        
+        article img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        
+        article img:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Seção de Destaque */
+        .destaque {
+            background-color: #ecf0f1;
+        }
+        
+        .destaque h3 {
+            color: #2c3e50;
+        }
+        
+        /* Seção de Entretenimento */
+        .entretenimento {
+            background-color: #ffebee;
+        }
+        
+        .entretenimento h3 {
+            color: #c62828;
+        }
+        
+        /* Seção de Tecnologia */
+        .tecnologia {
+            background-color: #e3f2fd;
+        }
+        
+        .tecnologia h3 {
+            color: #1565c0;
+        }
+        
+        /* Rodapé */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        /* Responsividade */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal de Notícias</h1>
+        <p>As últimas notícias em um só lugar</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Destaques</a></li>
+            <li><a href="#">Entretenimento</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- Seção de Destaque -->
+        <section class="destaque">
+            <h2>Destaques</h2>
+            <article>
+                <img src="c:\Users\Cedric\Pictures\Screenshots\Captura de tela 2025-03-25 220025.png" alt="Evento histórico">
+                <h3>Evento histórico acontece nesta semana</h3>
+                <p>Um acontecimento marcante está previsto para os próximos dias, com impacto em toda a região.</p>
+            </article>
+        </section>
+        
+        <!-- Seção de Entretenimento -->
+        <section class="entretenimento">
+            <h2>Entretenimento</h2>
+            <article>
+                <img src="https://image.api.playstation.com/vulcan/img/rnd/202010/2621/H9v5o8vP6RKkQtR77LIGrGDE.png" alt="Novo filme do Batman">
+                <h3>Novo filme do Batman estreia em 2023</h3>
+                <p>Confira os bastidores da produção do aguardado filme do Homem-Morcego que promete revolucionar o gênero.</p>
+            </article>
+            <article>
+                <img src="https://midias.correiobraziliense.com.br/_midias/png/2023/01/17/675x450/1_festival-27281036.png" alt="Festival de música">
+                <h3>Festival de música anuncia line-up completo</h3>
+                <p>Os principais nomes da música internacional confirmaram presença no evento que acontece no próximo mês.</p>
+            </article>
+        </section>
+        
+        
+        <section class="tecnologia">
+            <h2>Tecnologia</h2>
+            <article>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW1zZnc19nFKKj3a-hdfGe8GqUAgXPsAITcA&s" alt="Novos processadores Intel">
+                <h3>Intel lança novos processadores</h3>
+                <p>Novos processadores lunar lake eficientes, de baixo consumo e veloz!</p>
+            </article>
+            <article>
+                <img src="https://s2.glbimg.com/EgyDNaOmjB5ePVj3FIIQjnxEBEU=/620x350/e.glbimg.com/og/ed/f/original/2019/01/10/royale.png" alt="Smartphone dobrável">
+                <h3>Smartphones dobráveis: o futuro da mobilidade?</h3>
+                <p>Analisamos as vantagens e desafios dessa nova categoria de dispositivos móveis.</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Portal de Notícias. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
